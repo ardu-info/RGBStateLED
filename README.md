@@ -49,11 +49,11 @@ Build-in patterns
 
 ## Installation
 
-To use this library download the zip file, uncompress it to a folder named RGBStatusLed. Move the folder to {Arduino Path}/libraries.
+To use this library download the zip file, uncompress it to a folder named RGBStateLED. Move the folder to {Arduino Path}/libraries.
 
 ## Usage
 
-Include the library at the top of your Arduino script. `#include <RGBStatusLed.h>` and add any Effekt definition you need:
+Include the library at the top of your Arduino script. `#include <RGBStateLED.h>` and add any Effect definition you need:
 * `#include <SolidLEDEffect.h>` 
 * `#include <RGBswitcherEffect.h>`
 * `#include <RGBParserEffect.h>`  
@@ -61,7 +61,7 @@ Include the library at the top of your Arduino script. `#include <RGBStatusLed.h
 * `#include <WifiStateEffect.h>`  
 * or create a custom pattern by deriving  `#include <RGBStateLEDEffect.h>`  
 
-Create a global variable and pass the pin no of the red, green and blue channel: e.g. `RGBStatusLed statusLed(D8, D7, D6);`
+Create a global variable and pass the pin no of the red, green and blue channel: e.g. `RGBStateLED stateLED(D8, D7, D6);`
 Add `stateLED.begin();` to the init section of your code.
 Add `stateLED.update();` add the top of the loop method.
 
@@ -72,10 +72,10 @@ By now, you may signal a program state using one of the two options:
   * e.g. make the LED emit purple light for 1500ms 
 
 ```C++
-// instantiate SolidLedEffekt, r=255,g=0,b=255  duration = 1500ms 
-RGBStatusLedEffekt* seq = new SolidLedEffekt(&statusLed, 255, 0, 255,   1500);
-// assign Effekt to statusLed
-statusLed.SetSequence(seq);
+// instantiate SolidLEDEffect, r=255,g=0,b=255  duration = 1500ms 
+RGBStateLEDEffect* seq = new SolidLEDEffect(&stateLED, 255, 0, 255,   1500);
+// assign Effect to stateLED
+stateLED.SetSequence(seq);
 ```
 
 * Have a close look at the examples for details on how to use each effect.
