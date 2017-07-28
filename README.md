@@ -1,7 +1,3 @@
-https://guides.github.com/features/mastering-markdown/
-
-
-
 
 # RGBStateLED
 Provides an Arduino library for using a RGB led to asynchronously signal program states using predefined or custom blink pattern. 
@@ -25,11 +21,10 @@ Provides an Arduino library for using a RGB led to asynchronously signal program
  * [void DropSequenece()](#methods)
 * [Effects](#effects)
  * [SolidLEDEffect(RGBStateLED* parent, int r, int g, int b, int duration, int start = 0, LogLevel logLevel = NONE)](#effects)
- * [](#effects)
- * [](#effects)
- * [](#effects)
- * [](#effects)
- * [](#effects)
+ * [RGBParserEffect(RGBStateLED* parent, char* data, int duration = 450, int start = 0, LogLevel logLevel = NONE)](#effects)
+ * [FlashEffect(RGBStateLED* parent, int r,int g, int b, int riseTime, int duration, int fallTime, int start = 0, LogLevel logLevel = NONE)](#effects)
+ * [WifiStateEffect(RGBStateLED* parent, int start = 0, LogLevel logLevel = NONE)(#effects)
+ * [RGBStateLEDEffect(RGBStateLED* parent, unsigned long start = 0, LogLevel logLevel = NONE)](#effects)
 * [Custom Effect](#customeffect)
 * [Contributing](#contributing)
 * [History](#history)
